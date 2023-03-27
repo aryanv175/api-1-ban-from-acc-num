@@ -2,7 +2,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/result", methods=["POST", "GET"])
+@app.route("/request", methods=["POST", "GET"])
 def result():
     output = request.get_json()
     bank = output["BAN"][0:3]
